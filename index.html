@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>SDB Downloads Page</h1>
+<p>
+<b>InstallSDB.exe</b> is the full installer for SDB that contains all files needed to run SDB.
+</p>
+<a href=InstallSDB.exe>Click this link to download the <b>Full Installer</b> for SDB</a>
+<?php
+date_default_timezone_set('US/Eastern');
+$filename = 'InstallSDB.exe';
+if (file_exists($filename)) {
+    echo "($filename was last modified: " . date ("Ymd His", filemtime($filename)) . ")";
+}
+?>
+<br />
+<br />
+<p>
+<b>UpdateSDB.exe</b> is the partial installer for SDB that only includes files that have been updated since July 31, 2015.
+</p>
+<a href=UpdateSDB.exe>Click this link to download the <b>Update Installer</b> for SDB</a>
+<?php
+date_default_timezone_set('US/Eastern');
+$filename = 'UpdateSDB.exe';
+if (file_exists($filename)) {
+    echo "($filename was last modified: " . date ("Ymd His", filemtime($filename)) . ")";
+}
+?>
+
+<br />
+<br />
+<p>
+<b>SDB Manual</b>
+</p>
+<a href=https://drive.google.com/open?id=17qn3GODGVPjsH2gC978egHqJTmjwN3Ns>Click here to view the <b>SDB Manual</b></a>
+
+<br />
+<br />
+<p>
+<b>getsn.exe</b> is a small app that can be used to retrieve the serial number of a computer that you want to use to run SDB. Download the file, run it, and then email the SDBSetup.ini file that it creates to us.
+</p>
+<a href=getsn.exe>Click here to download the <b>Serial Number Retrieval Application</b></a>
+</body>
+</html>
